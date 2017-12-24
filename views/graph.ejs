@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+
+    <body>
+        <article>
+            <div id="graph"></div>
+
+            <div id="description">
+                <h1 class="heading1">Force Directed Graph</h1>
+                <div id="about"></div>
+            </div>
+            <% if (graphType === 'miserables') { %>
+                <div id="popup"></div>
+            <% } %>
+        </article>
+
+        <footer>
+            <div class="footer-container">
+                <div class="div-left">
+                    <ul>
+                        <li><a class="twitter-share-button"
+                               href="https://twitter.com/share"
+                               data-text="Guys!! Checkout the cool Force Directed Graph"
+                               data-url="https://github.com/liquidpie"
+                               data-hashtags="liquidpie"
+                               data-related="twitterapi,twitter">
+                                Tweet
+                            </a></li>
+                        <li>
+                            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fgithub.com%2Fliquidpie&layout=button&size=small&mobile_iframe=false&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </li>
+                    </ul>
+                </div>
+                <div class="div-right">
+                    <ul>
+                        <li><a href="https://github.com/liquidpie/force-directed-graph"><img src="/images/forkme.png" alt="fork me on github" id="fork" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.min.js"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <% if (graphType === 'miserables' ) { %>
+            <script src="/javascripts/fdg_miserables.js"></script>
+        <% } else { %>
+            <script src="/javascripts/fdg_random.js"></script>
+        <% } %>
+    </body>
+</html>

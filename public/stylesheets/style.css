@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(https://fonts.googleapis.com/css?family=Euphoria+Script);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css);
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin : 0px;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+img.resize {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#fork {
+  width: 100px;
+  height: auto;
+  opacity: 0.7;
+}
+
+#fork:hover {
+  opacity: 1.0;
+}
+
+#quote {
+  position: absolute;
+  left: 10%;
+  top: calc(50% - 50px);
+  width: 80%;
+  height: 40%;
+  text-align: center;
+  font-size: 72px;
+  font-family: Tangerine, Copperplate, "Courier New", sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.citation {
+  text-align: center;
+  display: block;
+  font-size: 32px;
+  text-shadow: 4px 4px 4px #aaa;
+  border-top: 1px solid;
+  margin-top: 7px;
+  padding-top: 7px;
+}
+
+#bar {
+  height : 2px;
+  border : 0px;
+}
+
+#bar > .ui-progressbar-value {
+  background: #379dff;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.div-container {
+  display: inline-block;
+}
+
+.div-left {
+  float: left;
+  margin-left: 0%;
+  margin-bottom: 3%;
+}
+
+.div-right {
+  float: right;
+  margin-right: 2%;
+}
+
+ul, li {
+  list-style-type: none;
+  display: inline;
+}
+
+#graph {
+  width: 100%;
+  height: 100vh;
+}
+
+.node {
+  fill-opacity: 0.8;
+  stroke: #999;
+}
+
+.node:hover {
+  fill-opacity: 1.0;
+}
+
+.link {
+  stroke: #999;
+}
+
+#popup {
+  width: 23%;
+  height: 300px;
+  overflow-y: auto;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  border-radius: 9px;
+  background: rgba(0, 100, 100, 0.2);
+  color: black;
+  padding: 20px;
+
+  font-family: 'Euphoria Script', cursive;
+  font-size: 24px;
+}
+
+.heading1 {
+  font-size: 42px;
+  color: #AAAAAA;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading3 {
+  font-family: 'Euphoria Script', cursive;
+  font-size: 36px;
+  color: brown;
+}
+
+#description {
+  padding: 10px;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+#about {
+  font-size: 18px;
+  color: #828282;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#about li {
+  display: block;
+}
+
