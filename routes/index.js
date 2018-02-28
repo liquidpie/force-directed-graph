@@ -5,15 +5,10 @@ const router  = express.Router();
 const graphRoute = require('./graph');
 
 /* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index', { title: 'Vivek Jaiswal' });
-});
+router.get('/', graphRoute.miserablesFDG);
+
+router.get('/character', graphRoute.miserablesCharacter);
 
 router.get('/random', graphRoute.randomFDG);
-
-router.get('/lesmiserables', graphRoute.miserablesFDG);
-
-router.get('/lesmiserables/character', graphRoute.miserablesCharacter);
-
 
 module.exports = router;

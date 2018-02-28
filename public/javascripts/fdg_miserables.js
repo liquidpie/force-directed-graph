@@ -123,7 +123,7 @@
             var character = function () {
                 var data = null;
                 $.ajax({
-                    url : '/lesmiserables/character',
+                    url : '/character',
                     method : 'GET',
                     data : {
                       id : d.id
