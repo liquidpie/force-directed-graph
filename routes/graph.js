@@ -3,11 +3,11 @@
 const characterService = require('../services/characters');
 
 const randomFDG = function (req, res) {
-    res.render('index', { title: 'Force Directed Graph', graphType: 'random' });
+    res.render('index', { title: 'Random Force Graph', graphType: 'random' });
 };
 
 const miserablesFDG = function (req, res) {
-    res.render('index', { title: 'Force Directed Graph', graphType: 'miserables' });
+    res.render('index', { title: 'Les Miserables Force Graph', graphType: 'miserables' });
 };
 
 const miserablesCharacter = function (req, res) {
